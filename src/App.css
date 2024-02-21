@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+*{
+  margin:  0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  width: 450px;
+  height: 520px;
+  margin: auto;
+  margin-top: 20px;
+  background-image: linear-gradient(180deg,#130754,#3b2f80 100%);
+  border-radius: 10%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top-bar{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+  align-items: center;
+  padding-top: 40px;
+}
+.top-bar input{
+  display: flex;
+  width: 250px;
+  padding: 20px;
+  height: 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+.img{
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 40px;
+   height: 40px;
+  border-radius: 50%; 
+  cursor: pointer;
+
+}.img img{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+
+}
+.weather-imge img{
+  width: 200px;
+  margin: auto;
+  margin-top: 0px;
+  height: 200px;
+  display: flex;
+}
+.weather-temp{
+  text-align: center;
   color: white;
+  font-size: 45px;
+}
+.weather-location{
+
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+.data-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: 20px;
+}
+.element{
+  display: flex;
+  /* width: 100px; */
+  justify-content: center;
+  align-items: center;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.humidity-percentage{
+  text-align: center;
+  color: white;
+  margin-left: 15px;
+  font-size: 15px;
+  font-weight: 500;
 }
+.wind-speed{
+  text-align: center;
+  color: white;
+  margin-left: 15px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.text{
+  text-align: center;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  color: white;
+  font-size: 15px;
+  padding-left: 10px;
+  font-weight: 500;
 }
